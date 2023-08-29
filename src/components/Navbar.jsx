@@ -23,8 +23,23 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className=" text-white text-[18px] font-bold cursor-pointer"> Piotr Staroń</p>
+          <p className="text-white text-[18px] font-bold cursor-pointer">
+            {" "}
+            Piotr Staroń
+          </p>
         </Link>
+        <ul className="list-none hidden sm:flex flex-row gap-10">
+          {navLinks.map((link) => (
+            <li //sets keys as not active
+              key={link.id}
+              className={` ${
+                active === link.title ? " text-white" : "text-secondary"
+              }`}
+            >
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
