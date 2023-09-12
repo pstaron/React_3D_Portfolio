@@ -15,6 +15,24 @@ export const textVariant = (delay) => {
       },
     };
   };
+  export const zoomIn = (delay, duration) => {
+    return {
+      hidden: {
+        scale: 0,
+        opacity: 0,
+      },
+      show: {
+        scale: 1,
+        opacity: 1,
+        transition: {
+          type: "tween",
+          delay: delay,
+          duration: duration,
+          ease: "easeOut",
+        },
+      },
+    };
+  };
   
   export const fadeIn = (direction, type, delay, duration) => {
     return {
@@ -37,25 +55,19 @@ export const textVariant = (delay) => {
     };
   };
   
-  export const zoomIn = (delay, duration) => {
+
+  
+  export const staggerContainer = (staggerChildren, delayChildren) => {
     return {
-      hidden: {
-        scale: 0,
-        opacity: 0,
-      },
+      hidden: {},
       show: {
-        scale: 1,
-        opacity: 1,
         transition: {
-          type: "tween",
-          delay: delay,
-          duration: duration,
-          ease: "easeOut",
+          staggerChildren: staggerChildren,
+          delayChildren: delayChildren || 0,
         },
       },
     };
   };
-  
   export const slideIn = (direction, type, delay, duration) => {
     return {
       hidden: {
@@ -75,14 +87,3 @@ export const textVariant = (delay) => {
     };
   };
   
-  export const staggerContainer = (staggerChildren, delayChildren) => {
-    return {
-      hidden: {},
-      show: {
-        transition: {
-          staggerChildren: staggerChildren,
-          delayChildren: delayChildren || 0,
-        },
-      },
-    };
-  };
