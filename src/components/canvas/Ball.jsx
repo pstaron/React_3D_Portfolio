@@ -3,7 +3,7 @@ import React from 'react'
 
 const Ball = () => {
   return (
-    <div>Update soon </div>
+    <div>Ball -Update soon </div>
   )
 }
 
