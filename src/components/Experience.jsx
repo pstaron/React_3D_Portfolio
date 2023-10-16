@@ -1,8 +1,11 @@
-import React from 'react'
+
 
 const Experience = () => {
   return (
-    <div>Experience</div>
+    <div>
+      <h1>Experience</h1>
+      <p>Experience</p>
+    </div>
   )
 }
 
