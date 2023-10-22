@@ -2,12 +2,19 @@
 
 const Experience = () => {
   return (
-    <div>
-      <h1>Experience</h1>
-      <p>Sinapi</p>
-      <p>FlaskOne</p>
-      <p>PMS LABS SP. Z O.O</p>
-    </div>
+      <div>
+          <div>
+              <h1>Experience</h1>
+              <p>Sinapi</p>
+          </div>
+          <div>
+              <p>Flask</p>
+          </div>
+          <div>
+              <p>PMS LABS SP. Z O.O</p>
+          </div>
+      </div>
+
   )
 }
 
