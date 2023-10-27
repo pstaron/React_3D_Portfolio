@@ -1,7 +1,8 @@
 # React + Vite
  Stack:
- Three.js.
  React.js.
+ Three.js.
+ 
  
 
 
