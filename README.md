@@ -2,8 +2,6 @@
  Stack:
  React.js.
  Three.js.
- 
- 
 
 
 Currently, two official plugins are available:
